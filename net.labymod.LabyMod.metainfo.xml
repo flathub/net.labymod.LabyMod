@@ -22,8 +22,12 @@
       -- Ready for more? -- That&apos;s by far not all. LabyMod offers an improved server list, interactive screenshots, in-game widgets, friends, dozens of add-ons, support for Fabric and Forge and much more! Take a look at the website or download it now.
     </p>
     <p>
-      NOTE: This wrapper is not verified by, affiliated with, or supported by LabyMedia GmbH. LabyMod is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.
+      NOTE:
     </p>
+    <ul>
+      <li>This wrapper is not verified by, affiliated with, or supported by LabyMedia GmbH.</li>
+      <li>LabyMod is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.</li>
+    </ul>
   </description>
   
   <launchable type="desktop-id">net.labymod.LabyMod.desktop</launchable>
@@ -64,6 +68,20 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="2.1.1" date="2024-04-11">
+      <description>
+        <ul>
+          <li>Added Update Mods in Launcher</li>
+          <li>Added Toggle Cosmetics Hotkey (CTRL + SHIFT + C)</li>
+          <li>Fixed No search option for modpacks</li>
+          <li>Fixed Download Mod for correct version</li>
+          <li>Fixed Modpacks not loading when using an invalid/old addon)</li>
+          <li>Fixed installing Modrinth Modpacks not applying config overrides</li>
+          <li>Fixed some forge mods not being displayed in the modpack overview</li>
+          <li>Languages with less than 60% translated strings are no longer available for selection</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.0" date="2024-03-26"/>
   </releases>
 </component>
