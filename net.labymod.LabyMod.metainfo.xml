@@ -68,6 +68,14 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+      <release version="2.1.2" date="2024-05-03">
+      <description>
+        <ul>
+          <li>Add 1.21 assets</li>
+          <li>Fix default version if newest release is snapshot version</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.1" date="2024-04-11">
       <description>
         <ul>
