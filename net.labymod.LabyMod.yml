@@ -13,7 +13,8 @@ finish-args:
   - --device=dri
   - --env=ZYPAK_SPAWN_LATEST_ON_REEXEC='1'
   #- --persist=.minecraft # Currently not usable, because the button "Open Ressourcepack" does not work with this method :(
-  - --filesystem=~/.minecraft
+  #- --filesystem=~/.minecraft # Cannot be used because the launcher cannot create the .minecraft folder on its own. Instead, access must be granted to the entire home folder.
+  - --filesystem=home
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
 modules:
   - name: LabyMod
@@ -27,9 +28,9 @@ modules:
     sources:
       - type: extra-data
         filename: laby.deb
-        url: https://releases.r2.labymod.net/launcher/linux/x64/labymodlauncher_2.1.2_amd64.deb
-        sha256: 71341d795a246ceffe3d56b38b74b7ec3c02e5fb32efcda7e4be581efddf6676
-        size: 89962792
+        url: https://releases.r2.labymod.net/launcher/linux/x64/labymodlauncher_2.1.3_amd64.deb
+        sha256: 2ecc00e582308f0668f33fec25d6551805bb6bc49937df0318d65bc0779e0613
+        size: 89971076
       - type: file
         path: net.labymod.LabyMod.metainfo.xml
       - type: file
