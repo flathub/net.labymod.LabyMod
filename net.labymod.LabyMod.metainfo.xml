@@ -68,6 +68,13 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="2.1.5" date="2024-06-21">
+      <description>
+        <ul>
+          <li>Added fallback DNS resolving if initially resolved to localhost</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.4" date="2024-06-18">
       <description>
         <ul>
