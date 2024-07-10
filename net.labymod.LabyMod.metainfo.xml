@@ -68,6 +68,19 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="2.1.6" date="2024-07-10">
+      <description>
+        <ul>
+          <li>Added Save Selected Patch Setting</li>
+          <li>Added Stop Button to Logs</li>
+          <li>Improved Default Modpack UX when Modloader is selected</li>
+          <li>Fixed Launcher uses the wrong key for the loading addons string</li>
+          <li>Fixed Can't install Fabric loader</li>
+          <li>Fixed Incorrect error notification displayed</li>
+          <li>Fixed News always collapsing after restart</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.5" date="2024-06-21">
       <description>
         <ul>
