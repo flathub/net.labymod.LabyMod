@@ -27,9 +27,9 @@ modules:
     sources:
       - type: extra-data
         filename: laby.deb
-        url: https://releases.r2.labymod.net/launcher/linux/x64/labymodlauncher_2.1.6_amd64.deb
-        sha256: 75a4d852fc6dbfbf59232bb2c15f38cb7b9052321f38c1291ece50abae8838ed
-        size: 90026140
+        url: https://releases.r2.labymod.net/launcher/linux/x64/labymodlauncher_2.1.7_amd64.deb
+        sha256: f93086c451aa8e9a9549b65733706d8d1d071334554f75be72129fdcaeaf906b
+        size: 90048196
       - type: file
         path: net.labymod.LabyMod.metainfo.xml
       - type: file
