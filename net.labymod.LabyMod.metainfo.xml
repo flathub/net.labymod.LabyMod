@@ -68,6 +68,15 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="2.1.12" date="2025-06-26">
+      <description>
+        <ul>
+          <li>Fixed player renderer within textures library</li>
+          <li>Fixed blocking port 25565 in some cases (IDEA-17394)</li>
+          <li>Improved news un/read state</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.10" date="2025-02-03">
       <description>
         <ul>
