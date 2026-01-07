@@ -68,6 +68,17 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="2.1.15" date="2026-01-05">
+      <description>
+        <ul>
+          <li>Added a new image, title and description for the Minecraft 26.1 release</li>
+          <li>Added offline server connection handling and cached meta indicator</li>
+          <li>Enhanced error handling for HTML responses in file operations and add caching fallback</li>
+          <li>Fixed Launcher process still running after closing the game (IDEA-18860)</li>
+          <li>Fixed an issue where the version parsing code wrongly ordered the new 26.1 release</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.13" date="2025-10-25">
       <description>
         <ul>
