@@ -9,6 +9,8 @@
   <project_license>LicenseRef-proprietary</project_license>
   
   <description>
+    <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by LabyMedia GmbH.**</p>
+    <p>**NOTE: LabyMod is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.**</p>    
     <p>
       -- Incredible performance -- Freezes, lags, and poor FPS are a thing of the past: With LabyMod you will achieve the best performance and make your game feel smoother than ever before.
     </p>
@@ -21,13 +23,6 @@
     <p>
       -- Ready for more? -- That&apos;s by far not all. LabyMod offers an improved server list, interactive screenshots, in-game widgets, friends, dozens of add-ons, support for Fabric and Forge and much more! Take a look at the website or download it now.
     </p>
-    <p>
-      NOTE:
-    </p>
-    <ul>
-      <li>This wrapper is not verified by, affiliated with, or supported by LabyMedia GmbH.</li>
-      <li>LabyMod is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.</li>
-    </ul>
   </description>
   
   <launchable type="desktop-id">net.labymod.LabyMod.desktop</launchable>
