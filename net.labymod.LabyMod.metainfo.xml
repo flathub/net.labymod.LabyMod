@@ -63,6 +63,25 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="2.2.0" date="2026-01-28">
+      <description>
+        <ul>
+          <li>Added more detailed progress visualization during modpack installs</li>
+          <li>Added a feature to directly import .mrpack modpacks</li>
+          <li>Added a slider setting to configure the amount of concurrent download processes</li>
+          <li>Added a feature to toggle between slim/wide skins in the textures library</li>
+          <li>Adjusted some modpack loading logic to prevent long-blocking operations with high amount of mods</li>
+          <li>Fixed newer cosmetics preventing the player model from loading (IDEA-19756)</li>
+          <li>Fixed an issue with libraries not updating in the update process when the game is still open (IDEA-19099)</li>
+          <li>Fixed an issue with specific modpacks (structures) failing to install (IDEA-18864)</li>
+          <li>Fixed an issue that caused the skin renderer to crash when changing the Mojang cape in certain scenarios</li>
+          <li>Fixed the missing app icon for RPM builds (IDEA-17272)</li>
+          <li>Fixed an error when trying to duplicate the default modpack (IDEA-18885)</li>
+          <li>Fixed cosmetics not loading in the launcher</li>
+          <li>(Cached) modloaders are now usable even if FlintMC is unreachable</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.15" date="2026-01-05">
       <description>
         <ul>
