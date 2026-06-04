@@ -63,6 +63,18 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.0" date="2026-06-04">
+      <description>
+        <p>Say hello to Laby Launcher</p>
+        <p>We've rebranded from "LabyMod Launcher" to Laby Launcher. The new name reflects what the launcher has become: it's no longer just for LabyMod.</p>
+        <p>You can now create instances for Vanilla, Fabric, Forge, Quilt and more, each with its own version, mods and configuration. And if you're coming from another launcher, you can import your existing setups from other launchers (e.g. MultiMC/Prism), with automatic detection doing most of the work for you.</p>
+        <p>A fresh look and feel</p>
+        <p>The entire launcher has been redesigned around our new design language we recently used in our website relaunch. The overview, settings, news and logs have all been rebuilt to be cleaner and easier to navigate.</p>
+        <p>Alongside the visual rework, we added management features for mods, addons, resource packs, shaders, screenshots and servers directly in our launcher. The skin &amp; cape library now loads faster, supports uploading your own skins, and includes a 3D cape preview.</p>
+        <p>Faster and more reliable</p>
+        <p>Performance was a major focus this release. Startup no longer blocks on bad network or outages - alongside faster downloads for game files. On top of all the new work, we've cleaned up a huge backlog of long-standing bugs and broken behavior that had piled up over the years.</p>
+      </description>
+    </release>
     <release version="2.2.0" date="2026-01-28">
       <description>
         <ul>
