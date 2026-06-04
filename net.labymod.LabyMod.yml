@@ -19,17 +19,17 @@ modules:
   - name: LabyMod
     buildsystem: simple
     build-commands:
-       - install -D --mode 0644 icon.png /app/share/icons/hicolor/256x256/apps/net.labymod.LabyMod.png
-       - install -D --mode 0644 net.labymod.LabyMod.desktop /app/share/applications/net.labymod.LabyMod.desktop
-       - install -D --mode 0644 net.labymod.LabyMod.metainfo.xml /app/share/metainfo/net.labymod.LabyMod.metainfo.xml
-       - install -D --mode 0755 run.sh /app/bin/run.sh
-       - install -D --mode 0755 apply_extra.sh /app/bin/apply_extra
+      - install -D --mode 0644 icon.png /app/share/icons/hicolor/256x256/apps/net.labymod.LabyMod.png
+      - install -D --mode 0644 net.labymod.LabyMod.desktop /app/share/applications/net.labymod.LabyMod.desktop
+      - install -D --mode 0644 net.labymod.LabyMod.metainfo.xml /app/share/metainfo/net.labymod.LabyMod.metainfo.xml
+      - install -D --mode 0755 run.sh /app/bin/run.sh
+      - install -D --mode 0755 apply_extra.sh /app/bin/apply_extra
     sources:
       - type: extra-data
         filename: laby.deb
         url: https://releases.r2.labymod.net/launcher/linux/x64/labymodlauncher_3.0.0_amd64.deb
-        sha256: a3aa7d63918cabe13b26655f5f4bc396f4cba86d8a16910a46190c87f4ebb302
-        size: 99188116
+        sha256: 36858b3708841c7c255940994574c6136731b9e6d335c679c25a76b0f827a86f
+        size: 99174964
       - type: file
         path: net.labymod.LabyMod.metainfo.xml
       - type: file
