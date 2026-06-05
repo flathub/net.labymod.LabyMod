@@ -63,6 +63,13 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.3" date="2026-06-05">
+      <description>
+        <ul>
+          <li>Reverted yesterdays changes regarding the LabyFabric config folders. Fixed upstream in LabyFabric.</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.1" date="2026-06-04">
       <description>
         <ul>
