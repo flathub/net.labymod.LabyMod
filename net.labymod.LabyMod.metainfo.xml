@@ -63,6 +63,18 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.5" date="2026-06-05">
+      <description>
+        <ul>
+          <li>Fixed launches occasionally failing or starting with incomplete game files when a network hiccup interrupted file resolution</li>
+          <li>   * The launcher now retries transient failures and waits for all files to be ready before starting</li>
+          <li>Fixed a crash/launch failure caused by duplicate libraries (e.g. two copies of log4j) ending up on the classpath</li>
+          <li>Fixed the launcher creating a new desktop shortcut on every update</li>
+          <li>Fixed window corners not rendering squared-off correctly on Linux when rounded corners are disabled</li>
+          <li>Fixed an issue that prevented most of anonymous statistics to not be sent + also made the transmission more reliable</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.4" date="2026-06-05">
       <description>
         <ul>
