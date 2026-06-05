@@ -63,6 +63,20 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.4" date="2026-06-05">
+      <description>
+        <ul>
+          <li>+ Added a "Maximized" window mode that starts the game filling your screen, configurable both globally and per instance</li>
+          <li>Restored the ability to rotate the main-menu player model up and down (hold Shift while dragging)</li>
+          <li>Fixed migrated modpacks loading the wrong mods, each migrated pack now keeps its own isolated mod set instead of pulling in the shared default mods</li>
+          <li>Fixed mod configs and keybinds (e.g. Litematica) not carrying over after migrating your modpacks to instances</li>
+          <li>Fixed the launcher's "Open mods folder" and the in-game mods folder pointing at different locations for migrated instances</li>
+          <li>Fixed a launch failure caused by permission errors (EPERM) when an instance's game directory is the root of a drive</li>
+          <li>Fixed a network race during launch that could leave the classpath incomplete</li>
+          <li>Fixed the launcher occasionally failing to open after corrupted data, and added a crash log to your Downloads folder to help diagnose startup failures</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.3" date="2026-06-05">
       <description>
         <ul>
