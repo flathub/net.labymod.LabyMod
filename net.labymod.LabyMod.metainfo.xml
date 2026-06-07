@@ -63,6 +63,36 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.6" date="2026-06-07">
+      <description>
+        <ul>
+          <li>+ On disk instance content now updates automatically (add or remove a mod, addon, ... and the launcher reflects it without a manual refresh</li>
+          <li>+ Added a "search online" button when an installed-content search has no matches, opening the browse tab with the same query</li>
+          <li>+ Added a stop button to the live log so you can close the game straight from the log view</li>
+          <li>+ The crash report now includes much more diagnostic context (storage mode, whether mods/addons are shared, the effective game directory, Java path, JVM arguments, window mode, system info, and more), and the crash window is larger and scales with the launcher window</li>
+          <li>While an instance is starting, the play button now stays disabled with a loading cursor until the game window actually opens, instead of flipping to "stop" too early</li>
+          <li>The stop, upload and delete buttons in the live log now have proper labels and are easier to hit</li>
+          <li>Recolored the instance manage buttons and moved the "Manage" settings category to the bottom</li>
+          <li>Renamed the "Hide IPs" setting to "Hide unknown servers"</li>
+          <li>Restored game mode selection in the quick play bar</li>
+          <li>Improved screenshots tab performance</li>
+          <li>Fixed shared mods, addons and resource packs being deleted when removing an instance that used a shared game directory</li>
+          <li>Fixed disabling/enabling a mod or addon reloading the entry two or three times</li>
+          <li>Fixed the live log still showing "Live" after the game had already stopped</li>
+          <li>Fixed not being able to view older logs while a game was running live</li>
+          <li>Fixed the live log not reliably scrolling to the bottom</li>
+          <li>Fixed a log stream desync that could drop or misorder log lines</li>
+          <li>Fixed stale cached launch manifests by re-downloading them on a cache mismatch</li>
+          <li>Fixed LabyMod occasionally booting in its default state when an instance was closed and quickly reopened</li>
+          <li>Fixed a false "LabyMod outage" warning showing when you're simply offline</li>
+          <li>Fixed the wrong Iris icon showing in the shader mod suggestion screen</li>
+          <li>Fixed pseudo versions not resolving when checking shader mod compatibility</li>
+          <li>Fixed the wrong mouse cursor on the grayed out shader install button</li>
+          <li>Fixed the quick play bar's z-index/overlap issue and layout for wide entries</li>
+          <li>Changed sharemods / shareaddons to default off, matching 2.x behavior</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.5" date="2026-06-05">
       <description>
         <ul>
