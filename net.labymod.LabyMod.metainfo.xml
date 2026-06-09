@@ -67,6 +67,41 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.7" date="2026-06-07">
+      <description>
+        <ul>
+          <li>+ CurseForge modpack browsing and installation is now supported</li>
+          <li>+ Switching to a version that does not support the current mod loader now offers to switch without a loader, or with an alternative one and checks for compatible mod versions</li>
+          <li>+ Compatible mod versions for the new Minecraft version are shown and can be automatically installed when changing versions</li>
+          <li>+ A warning is shown when installing a mod with incompatible dependencies</li>
+          <li>+ Mod list loading is significantly faster</li>
+          <li>+ Log sessions now show the LabyMod version, release channel, and commit reference in the header</li>
+          <li>+ Pressing Ctrl+A followed by Ctrl+C in the log viewer copies the entire raw log to the clipboard</li>
+          <li>+ Mod loader can now be disabled directly from the mods tab</li>
+          <li>+ Category filtering is now available when browsing resource packs, shaders and modpacks</li>
+          <li>Temporary chat logging fix until the client fixes it</li>
+          <li>Native libraries are now extracted per instance, preventing permission errors when relaunching on Windows</li>
+          <li>The crash guard is now more robust against edge cases during startup and shutdown</li>
+          <li>Fabric configuration is now automatically migrated to the new format when LabyFabric 2.0.8 or newer is installed</li>
+          <li>Mod icons fetched from CDN are cached locally to reduce repeated network requests</li>
+          <li>Fixed ArchLinux package not working</li>
+          <li>Fixed a crash on Windows when the launcher was closed before fully initializing</li>
+          <li>Fixed duplicate LabyMod libraries ending up on the classpath, which could cause log4j conflicts</li>
+          <li>Fixed the Windows communication server binding to the wrong interface, which triggered unnecessary firewall prompts</li>
+          <li>Fixed scrollbar gaps and a sticky header shift in the version switch dialog</li>
+          <li>Fixed a double refresh triggered by mod install and content change events</li>
+          <li>Fixed the provider toggle animation leaking across different views</li>
+          <li>Fixed mod card name and badge ordering</li>
+          <li>Fixed Forge manifest deduplication</li>
+          <li>Fixed downloads not being atomic, which could leave incomplete files on disk</li>
+          <li>Fixed the selected mod loader not being saved when switching to a version with a new loader</li>
+          <li>Fixed mod loader badges not appearing in the version picker after a loader change</li>
+          <li>Fixed shader mod detection not considering addons (e.g. OptiFine) when deciding whether to show the shader mod suggestion</li>
+          <li>Fixed no mod loader being offered when switching to a Minecraft version that supports one</li>
+          <li>Fixed the mods tab showing the loader suggestion page after switching to a version with a mod loader</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.6" date="2026-06-07">
       <description>
         <ul>
