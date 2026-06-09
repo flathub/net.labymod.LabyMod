@@ -67,6 +67,19 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.8" date="2026-06-09">
+      <description>
+        <ul>
+          <li>The default instance now runs directly in .minecraft instead of a per-instance overlay, and any stale overlay left by earlier versions is cleaned up automatically</li>
+          <li>Fixed installed mods sometimes showing a wrong or shared icon when several mods were installed in quick succession</li>
+          <li>Fixed a mod's "Install" button not switching to the installed state until the tab was left and reopened</li>
+          <li>Fixed mods on "Latest release"/"Latest snapshot" instances being listed from and installed into a folder that didn't match the Minecraft version the game actually launched</li>
+          <li>Fixed a crash when reading a corrupt or invalid addon/mod jar</li>
+          <li>Fixed a crash when launching in fullscreen caused by also passing an explicit window size</li>
+          <li>Fixed JVM arguments with quoted values containing spaces being split incorrectly</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.7" date="2026-06-07">
       <description>
         <ul>
