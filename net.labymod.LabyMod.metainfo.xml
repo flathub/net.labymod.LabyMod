@@ -9,26 +9,26 @@
   <project_license>LicenseRef-proprietary</project_license>
   
   <description>
-    <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by LabyMedia GmbH.**</p>
-    <p>**NOTE: LabyMod is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.**</p>    
     <p>
-      -- Incredible performance -- Freezes, lags, and poor FPS are a thing of the past: With LabyMod you will achieve the best performance and make your game feel smoother than ever before.
+      LabyMod is the ultimate free all-in-one client for Minecraft: Java Edition, bundling 300+ mods, 3D voice chat, cosmetics and a modern launcher into a single download for Windows, macOS and Linux.
     </p>
-    <p>
-      -- Your Game. Your Style -- It&apos;s up to you! Switch between a stunning, modern theme in high resolution or the classic and iconic Minecraft style at any time.
-    </p>
-    <p>
-      -- VoiceChat in Minecraft:&#xA; -- Meet new friends or chat with familiar faces - with our VoiceChat you will have even more fun in-game. Our ready-to-go VoiceChat addon can be used on any multiplayer server without any additional setup required.
-    </p>
-    <p>
-      -- Ready for more? -- That&apos;s by far not all. LabyMod offers an improved server list, interactive screenshots, in-game widgets, friends, dozens of add-ons, support for Fabric and Forge and much more! Take a look at the website or download it now.
-    </p>
+    <p>What you get:</p>
+    <ul>
+      <li><em>Incredible performance</em> - Freezes, lags and poor FPS are a thing of the past. With doubled performance your game feels smoother than ever before.</li>
+      <li><em>Your game, your style</em> - Switch at any time between a stunning, high-resolution modern theme and the classic, iconic Minecraft look.</li>
+      <li><em>Built-in VoiceChat</em> - Free in-game voice chat with 3D surround sound and proximity audio on every multiplayer server - no plugins, no setup required.</li>
+      <li><em>Cosmetics with character</em> - Handcrafted, passionately animated and highly customizable cosmetics, plus a skin and cape library with 3D preview and support for your own uploads.</li>
+      <li><em>Reinvented screenshots</em> - Capture and share 3D screenshots with automatic player tagging.</li>
+      <li><em>Stay connected</em> - A server-independent friends chat with tabs and a freely movable chat window keeps you in touch wherever you play.</li>
+      <li><em>One launcher for everything</em> - Create instances for Vanilla, Fabric, Forge and Quilt, each with its own mods and configuration, and import existing setups from launchers like MultiMC or Prism.</li>
+    </ul>
+    <p>Note: LabyMod is not an official Minecraft product. It is not approved by or associated with Mojang or Microsoft.</p>
   </description>
   
   <launchable type="desktop-id">net.labymod.LabyMod.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://labymod.net/page/tpl/assets/images/four/launcher.png</image>
+      <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/launcher.png</image>
       <caption>LabyMod Launcher</caption>
     </screenshot>
     <screenshot type="default">
@@ -51,6 +51,10 @@
       <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/laby1.png</image>
       <caption>LabyMod Ingame Screenshot</caption>
     </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/soccer.png</image>
+      <caption>Soccer in Minecraft</caption>
+    </screenshot>
   </screenshots>
   <url type="bugtracker">https://labymod.net/ideas</url>
   <url type="help">https://labymod.net/support</url>
@@ -63,6 +67,41 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.7" date="2026-06-07">
+      <description>
+        <ul>
+          <li>+ CurseForge modpack browsing and installation is now supported</li>
+          <li>+ Switching to a version that does not support the current mod loader now offers to switch without a loader, or with an alternative one and checks for compatible mod versions</li>
+          <li>+ Compatible mod versions for the new Minecraft version are shown and can be automatically installed when changing versions</li>
+          <li>+ A warning is shown when installing a mod with incompatible dependencies</li>
+          <li>+ Mod list loading is significantly faster</li>
+          <li>+ Log sessions now show the LabyMod version, release channel, and commit reference in the header</li>
+          <li>+ Pressing Ctrl+A followed by Ctrl+C in the log viewer copies the entire raw log to the clipboard</li>
+          <li>+ Mod loader can now be disabled directly from the mods tab</li>
+          <li>+ Category filtering is now available when browsing resource packs, shaders and modpacks</li>
+          <li>Temporary chat logging fix until the client fixes it</li>
+          <li>Native libraries are now extracted per instance, preventing permission errors when relaunching on Windows</li>
+          <li>The crash guard is now more robust against edge cases during startup and shutdown</li>
+          <li>Fabric configuration is now automatically migrated to the new format when LabyFabric 2.0.8 or newer is installed</li>
+          <li>Mod icons fetched from CDN are cached locally to reduce repeated network requests</li>
+          <li>Fixed ArchLinux package not working</li>
+          <li>Fixed a crash on Windows when the launcher was closed before fully initializing</li>
+          <li>Fixed duplicate LabyMod libraries ending up on the classpath, which could cause log4j conflicts</li>
+          <li>Fixed the Windows communication server binding to the wrong interface, which triggered unnecessary firewall prompts</li>
+          <li>Fixed scrollbar gaps and a sticky header shift in the version switch dialog</li>
+          <li>Fixed a double refresh triggered by mod install and content change events</li>
+          <li>Fixed the provider toggle animation leaking across different views</li>
+          <li>Fixed mod card name and badge ordering</li>
+          <li>Fixed Forge manifest deduplication</li>
+          <li>Fixed downloads not being atomic, which could leave incomplete files on disk</li>
+          <li>Fixed the selected mod loader not being saved when switching to a version with a new loader</li>
+          <li>Fixed mod loader badges not appearing in the version picker after a loader change</li>
+          <li>Fixed shader mod detection not considering addons (e.g. OptiFine) when deciding whether to show the shader mod suggestion</li>
+          <li>Fixed no mod loader being offered when switching to a Minecraft version that supports one</li>
+          <li>Fixed the mods tab showing the loader suggestion page after switching to a version with a mod loader</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.6" date="2026-06-07">
       <description>
         <ul>
