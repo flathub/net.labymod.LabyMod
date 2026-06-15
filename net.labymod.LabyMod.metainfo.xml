@@ -2,15 +2,15 @@
 <component type="desktop-application">
   <id>net.labymod.LabyMod</id>
   
-  <name>LabyMod</name>
-  <summary>All-in-one Minecraft Client</summary>
+  <name>Laby Launcher</name>
+  <summary>All-in-one Minecraft client</summary>
   
   <metadata_license>MIT</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   
   <description>
     <p>
-      LabyMod is the ultimate free all-in-one client for Minecraft: Java Edition, bundling 300+ mods, 3D voice chat, cosmetics and a modern launcher into a single download for Windows, macOS and Linux.
+      Laby Launcher delivers LabyMod, the ultimate free all-in-one client for Minecraft: Java Edition, bundling 300+ mods, 3D voice chat, cosmetics and a modern launcher into a single download for Windows, macOS and Linux. Beyond LabyMod, the launcher also lets you create and run instances for Vanilla, Fabric, Forge and Quilt, so everything you play lives in one place.
     </p>
     <p>What you get:</p>
     <ul>
@@ -29,7 +29,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/launcher.png</image>
-      <caption>LabyMod Launcher</caption>
+      <caption>Laby Launcher</caption>
     </screenshot>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/laby2.png</image>
@@ -56,16 +56,22 @@
       <caption>Soccer in Minecraft</caption>
     </screenshot>
   </screenshots>
-  <url type="bugtracker">https://labymod.net/ideas</url>
-  <url type="help">https://labymod.net/support</url>
-  <url type="homepage">https://labymod.net/</url>
-  <developer_name>LabyMedia GmbH</developer_name>
+  <url type="bugtracker">https://laby.net/ideas</url>
+  <url type="help">https://laby.net/support</url>
+  <url type="homepage">https://laby.net/client</url>
+  <developer id="net.labymod">
+    <name>LabyMedia GmbH</name>
+  </developer>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">mild</content_attribute>
     <content_attribute id="social-chat">intense</content_attribute>
     <content_attribute id="social-audio">moderate</content_attribute>
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
+  <branding>
+    <color type="primary" scheme_preference="light">#3584e4</color>
+    <color type="primary" scheme_preference="dark">#172f5e</color>
+  </branding>
   <releases>
     <release version="3.0.8" date="2026-06-09">
       <description>

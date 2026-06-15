@@ -12,6 +12,7 @@ finish-args:
   - --share=network
   - --device=dri
   - --env=ZYPAK_SPAWN_LATEST_ON_REEXEC='1'
+  - --env=LABY_ENVIRONMENT=flatpak
   #- --persist=.minecraft # Currently not usable, because the button "Open Ressourcepack" does not work with this method :(
   - --filesystem=~/.minecraft:create
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
@@ -40,4 +41,3 @@ modules:
         path: apply_extra.sh
       - type: file
         path: net.labymod.LabyMod.desktop
-
