@@ -2,15 +2,15 @@
 <component type="desktop-application">
   <id>net.labymod.LabyMod</id>
   
-  <name>LabyMod</name>
-  <summary>All-in-one Minecraft Client</summary>
+  <name>Laby Launcher</name>
+  <summary>All-in-one Minecraft client</summary>
   
   <metadata_license>MIT</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   
   <description>
     <p>
-      LabyMod is the ultimate free all-in-one client for Minecraft: Java Edition, bundling 300+ mods, 3D voice chat, cosmetics and a modern launcher into a single download for Windows, macOS and Linux.
+      Laby Launcher delivers LabyMod, the ultimate free all-in-one client for Minecraft: Java Edition, bundling 300+ mods, 3D voice chat, cosmetics and a modern launcher into a single download for Windows, macOS and Linux. Beyond LabyMod, the launcher also lets you create and run instances for Vanilla, Fabric, Forge and Quilt, so everything you play lives in one place.
     </p>
     <p>What you get:</p>
     <ul>
@@ -29,7 +29,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/launcher.png</image>
-      <caption>LabyMod Launcher</caption>
+      <caption>Laby Launcher</caption>
     </screenshot>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/net.labymod.LabyMod/master/screenshots/laby2.png</image>
@@ -56,17 +56,48 @@
       <caption>Soccer in Minecraft</caption>
     </screenshot>
   </screenshots>
-  <url type="bugtracker">https://labymod.net/ideas</url>
-  <url type="help">https://labymod.net/support</url>
-  <url type="homepage">https://labymod.net/</url>
-  <developer_name>LabyMedia GmbH</developer_name>
+  <url type="bugtracker">https://laby.net/ideas</url>
+  <url type="help">https://laby.net/support</url>
+  <url type="homepage">https://laby.net/client</url>
+  <developer id="net.labymod">
+    <name>LabyMedia GmbH</name>
+  </developer>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">mild</content_attribute>
     <content_attribute id="social-chat">intense</content_attribute>
     <content_attribute id="social-audio">moderate</content_attribute>
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
+  <branding>
+    <color type="primary" scheme_preference="light">#3584e4</color>
+    <color type="primary" scheme_preference="dark">#172f5e</color>
+  </branding>
   <releases>
+    <release version="3.0.10" date="2026-06-15">
+      <description>
+        <ul>
+          <li>Added a "Recover Instances from Disk" option in settings that rebuilds your instance list from leftover instance folders</li>
+          <li>Fixed a permission error (EPERM) that could block launching when the shared assets link couldn't be created or replaced</li>
+          <li>Fixed "Open folder" for resource packs, shader packs, and screenshots opening a stale temporary overlay path instead of the instance's actual game directory</li>
+          <li>Fixed a race when quickly enabling/disabling mods that could leave a duplicate or stale disabled copy, and installed mods now stay in a stable order</li>
+          <li>Fixed a crash on Windows when re-activating the launcher after its window had been destroyed</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.0.9" date="2026-06-15">
+      <description>
+        <ul>
+          <li>Refreshed the in-progress installation animation</li>
+          <li>Added automatic recovery for a corrupt or unreadable instance list (notably on NTFS drives)</li>
+          <li>Fixed mod search and update checks returning no results on NeoForge instances</li>
+          <li>Fixed the launcher window not reappearing on Windows when the app was reopened while it was already running in the background</li>
+          <li>Fixed the news section disappearing when the news feed briefly came back empty during a reload or outage</li>
+          <li>Fixed mod and addon icons that failed to load showing blank, they now retry automatically and fall back to a placeholder</li>
+          <li>Fixed long server addresses overflowing their card in the friends list</li>
+          <li>Fixed returning to the home screen not always resetting the active view</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.8" date="2026-06-09">
       <description>
         <ul>
