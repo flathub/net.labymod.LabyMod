@@ -67,6 +67,60 @@
     <content_attribute id="money-purchasing">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.0.12" date="2026-07-25">
+      <description>
+        <ul>
+          <li>+ Added a graphics backend dropdown (default/OpenGL/Vulkan) for Minecraft 26.2 and newer</li>
+          <li>+ Added optional thread and heap dumps for crash diagnostics</li>
+          <li>+ Added an on demand heap dump button for running instances</li>
+          <li>+ Added an automatic thread dump when force stopping a frozen instance (under Debug settings)</li>
+          <li>+ Added global and per instance environment variables for the game process ([IDEA-21283](https://laby.net/ideas/21283))</li>
+          <li>+ Added a Feral Gamemode toggle on Linux ([IDEA-15479](https://laby.net/ideas/15479))</li>
+          <li>+ Added a MangoHud overlay toggle for Linux ([IDEA-15479](https://laby.net/ideas/15479))</li>
+          <li>+ You can now drag & drop mods, addons, resource packs and shaders onto an instance to install them ([IDEA-21435](https://laby.net/ideas/21435))</li>
+          <li>+ You can now install LabyMod-incompatible mods after confirming a disclaimer ([IDEA-21393](https://laby.net/ideas/21393))</li>
+          <li>+ Added a right click context menu for mods with update, enable/disable, delete and change source ([IDEA-21426](https://laby.net/ideas/21426))</li>
+          <li>+ Added a version picker for Modrinth modpacks ([IDEA-21432](https://laby.net/ideas/21432))</li>
+          <li>+ You can now update a whole Modrinth modpack to its newest version ([IDEA-21431](https://laby.net/ideas/21431))</li>
+          <li>+ Installed mods can now be filtered by source (Modrinth/CurseForge/manual) and by modpack membership ([IDEA-21427](https://laby.net/ideas/21427))</li>
+          <li>+ Modpacks that need a different mod loader version now prompt you to switch instead of failing ([IDEA-21429](https://laby.net/ideas/21429))</li>
+          <li>+ You can now scan any chosen folder for importable instances ([IDEA-21430](https://laby.net/ideas/21430))</li>
+          <li>+ You can now import instances from CurseForge ([IDEA-21033](https://laby.net/ideas/21033))</li>
+          <li>+ Added import from a .mrpack file to the import menu</li>
+          <li>+ You can now cancel a launch before the game process starts ([IDEA-21247](https://laby.net/ideas/21247))</li>
+          <li>+ The launcher now falls back to the default release channel when the one you had configured no longer exists</li>
+          <li>+ Show friendly, readable error popups instead of raw stack traces for common failures, with an optional technical details view</li>
+          <li>+ Updated the profile renderer for better performance and fixes ([IDEA-20917](https://laby.net/ideas/20917))</li>
+          <li>Fixed a 2.5 year old bug that could corrupt a staged update</li>
+          <li>Fixed the auto-update setting being ignored on client exit ([IDEA-21017](https://laby.net/ideas/21017))</li>
+          <li>Fixed "Restart Now" not automatically relaunching the game after installing an addon ([IDEA-21105](https://laby.net/ideas/21105))</li>
+          <li>Fixed mods installed automatically as dependencies still showing the "install" button until the browser was reopened</li>
+          <li>([IDEA-21454](https://laby.net/ideas/21454))</li>
+          <li>Discord Rich Presence is now hidden while an instance is running to allow the client to set it ([IDEA-21446](https://laby.net/ideas/21446))</li>
+          <li>Fixed the Fullscreen setting not sticking by writing fullscreen:false back to options when it's disabled</li>
+          <li>Fixed resource packs disappearing in game and instance settings resetting ([IDEA-21234](https://laby.net/ideas/21234),</li>
+          <li>[IDEA-20814](https://laby.net/ideas/20814))</li>
+          <li>Fixed Quick Launch not matching resolved instance versions ([IDEA-21266](https://laby.net/ideas/21266))</li>
+          <li>Fixed exported instances losing their loader and mods when reimported ([IDEA-21423](https://laby.net/ideas/21423))</li>
+          <li>Fixed invalid friend role colors crashing the renderer</li>
+          <li>Fixed instance launches breaking on locked symlinks while preparing the game directory</li>
+          <li>Fixed installed mods not clearing when loading them fails</li>
+          <li>Fixed launching without being logged in failing silently, it now shows an error ([IDEA-21425](https://laby.net/ideas/21425))</li>
+          <li>Fixed oversized logs failing to upload, they are now split across multiple pastes ([IDEA-21204](https://laby.net/ideas/21204))</li>
+          <li>Fixed CurseForge resource pack downloads silently failing when the download URL is missing ([IDEA-21118](https://laby.net/ideas/21118))</li>
+          <li>Fixed a race condition where deleting an addon right after disabling it could silently fail ([IDEA-21087](https://laby.net/ideas/21087))</li>
+          <li>Fixed non default release channels showing the wrong LabyMod version ([IDEA-21082](https://laby.net/ideas/21082))</li>
+          <li>Fixed launches hanging forever when an artifact download stalled, downloads are now aborted and retried</li>
+          <li>Fixed installed addons being hidden instead of shown (marked) when browsing, to match mods</li>
+          <li>Fixed the installed search bar disappearing when there were no installed items yet</li>
+          <li>Replaced the installed mod filter chips with a dropdown menu</li>
+          <li>Fixed several bugs causing duplicate or incorrect installed mod counts</li>
+          <li>Moved installed content actions into hamburger menus</li>
+          <li>Fixed the cmd+k support menu shortcut no longer working</li>
+          <li>Fixed mod source lookup and content search provider errors not being shown to the user</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.8" date="2026-06-09">
       <description>
         <ul>
