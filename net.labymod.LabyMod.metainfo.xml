@@ -73,6 +73,77 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.0.12" date="2026-07-25">
+      <description>
+        <ul>
+          <li>Added a graphics backend dropdown (default/OpenGL/Vulkan) for Minecraft 26.2 and newer</li>
+          <li>Added optional thread and heap dumps for crash diagnostics</li>
+          <li>Added an on demand heap dump button for running instances</li>
+          <li>Added an automatic thread dump when force stopping a frozen instance (under Debug settings)</li>
+          <li>Added global and per instance environment variables for the game process</li>
+          <li>Added a Feral Gamemode toggle on Linux</li>
+          <li>Added a MangoHud overlay toggle for Linux</li>
+          <li>You can now drag &amp; drop mods, addons, resource packs and shaders onto an instance to install them</li>
+          <li>You can now install LabyMod-incompatible mods after confirming a disclaimer</li>
+          <li>Added a right click context menu for mods with update, enable/disable, delete and change source</li>
+          <li>Added a version picker for Modrinth modpacks</li>
+          <li>You can now update a whole Modrinth modpack to its newest version</li>
+          <li>Installed mods can now be filtered by source (Modrinth/CurseForge/manual) and by modpack membership</li>
+          <li>Modpacks that need a different mod loader version now prompt you to switch instead of failing</li>
+          <li>You can now scan any chosen folder for importable instances</li>
+          <li>You can now import instances from CurseForge</li>
+          <li>Added import from a .mrpack file to the import menu</li>
+          <li>You can now cancel a launch before the game process starts</li>
+          <li>The launcher now falls back to the default release channel when the one you had configured no longer exists</li>
+          <li>Show friendly, readable error popups instead of raw stack traces for common failures, with an optional technical details view</li>
+          <li>Updated the profile renderer for better performance and fixes</li>
+          <li>Fixed a 2.5 year old bug that could corrupt a staged update</li>
+          <li>Fixed the auto-update setting being ignored on client exit</li>
+          <li>Fixed "Restart Now" not automatically relaunching the game after installing an addon</li>
+          <li>Fixed mods installed automatically as dependencies still showing the "install" button until the browser was reopened</li>
+          <li>Discord Rich Presence is now hidden while an instance is running to allow the client to set it</li>
+          <li>Fixed the Fullscreen setting not sticking by writing fullscreen:false back to options when it's disabled</li>
+          <li>Fixed resource packs disappearing in game and instance settings resetting</li>
+          <li>Fixed Quick Launch not matching resolved instance versions</li>
+          <li>Fixed exported instances losing their loader and mods when reimported</li>
+          <li>Fixed invalid friend role colors crashing the renderer</li>
+          <li>Fixed instance launches breaking on locked symlinks while preparing the game directory</li>
+          <li>Fixed installed mods not clearing when loading them fails</li>
+          <li>Fixed launching without being logged in failing silently, it now shows an error</li>
+          <li>Fixed oversized logs failing to upload, they are now split across multiple pastes</li>
+          <li>Fixed CurseForge resource pack downloads silently failing when the download URL is missing</li>
+          <li>Fixed a race condition where deleting an addon right after disabling it could silently fail</li>
+          <li>Fixed non default release channels showing the wrong LabyMod version</li>
+          <li>Fixed launches hanging forever when an artifact download stalled, downloads are now aborted and retried</li>
+          <li>Fixed installed addons being hidden instead of shown (marked) when browsing, to match mods</li>
+          <li>Fixed the installed search bar disappearing when there were no installed items yet</li>
+          <li>Replaced the installed mod filter chips with a dropdown menu</li>
+          <li>Fixed several bugs causing duplicate or incorrect installed mod counts</li>
+          <li>Moved installed content actions into hamburger menus</li>
+          <li>Fixed the cmd+k support menu shortcut no longer working</li>
+          <li>Fixed mod source lookup and content search provider errors not being shown to the user</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.0.11" date="2026-06-23">
+      <description>
+        <ul>
+          <li>Reworked the Fullscreen setting so it applies reliably on launch</li>
+          <li>The Fabric/Forge mod loader can now be enabled or disabled using the already-installed copy when our services are unreachable, instead of failing</li>
+          <li>Improved resilience during LabyMod service outages</li>
+          <li>Fixed the "Automatic Updates" setting being ignored</li>
+          <li>Fixed LabyMod not being identified correctly on launch (restored the launcher identity arguments) and removed a malformed native temp-directory argument</li>
+          <li>Fixed instance launches pulling in libraries that don't apply to your operating system</li>
+          <li>Fixed addon icons showing a blank box when the online image was unavailable, they now fall back to the icon bundled inside the addon's .jar (e.g. for delisted addons) and are cached locally for faster loading</li>
+          <li>Fixed the account skin preview in the top-right briefly showing a default Steve skin after adding an account or changing your skin</li>
+          <li>Fixed the News panel briefly opening and then collapsing right after the launcher starts</li>
+          <li>Fixed the account switcher not scrolling when you have more accounts than fit on screen, which left the lower accounts and the "Add account" button unreachable</li>
+          <li>Fixed the home Start button staying disabled while an instance is still launching when multiple instances are enabled</li>
+          <li>Fixed the Mods tab icon being slightly misaligned with the other navigation icons</li>
+          <li>Fixed the Laby Launcher logo behaving like a clickable button while you're already on the home screen</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.10" date="2026-06-15">
       <description>
         <ul>
