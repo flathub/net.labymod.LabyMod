@@ -73,6 +73,49 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.0.13" date="2026-08-15">
+      <description>
+        <ul>
+          <li>+ Added a notification center in the title bar with your laby.net inbox and launcher notifications ([IDEA-17123](https://laby.net/ideas/17123))</li>
+          <li>+ You can now be notified when a LabyMod-incompatible mod becomes compatible and install it into your instances straight from the notification</li>
+          <li>+ Rebuilt the first start setup into a full onboarding flow with terms, accounts and the most important settings</li>
+          <li>+ Crash reports now come with a diagnosis and a suggested fix for common causes, including a one click reset for broken memory or JVM arguments</li>
+          <li>+ Instances now warn you before launching when mods from a modpack have become incompatible, offering to cancel, launch anyway or disable them</li>
+          <li>+ You can now convert a shared instance into a separate one</li>
+          <li>+ Modpack search now offers other game versions and can create a matching instance for them</li>
+          <li>+ Failed modpack installs now offer a retry instead of a raw error</li>
+          <li>+ Environment variables can now be edited, for instances and globally</li>
+          <li>+ Added a button to open the logs folder directly ([IDEA-20760](https://laby.net/ideas/20760))</li>
+          <li>+ Mods, resource packs, shaders and modpacks are now cached on disk and reused across all instances instead of being downloaded again</li>
+          <li>Loading installed content is now dramatically faster</li>
+          <li>Mod metadata is now read by streaming jar contents instead of loading whole archives into memory</li>
+          <li>Bundled addons are no longer listed as installed/installable</li>
+          <li>Fixed the launcher crashing on start when a second instance was opened</li>
+          <li>Fixed selecting a theme failing when LabyMod's settings were corrupt ([IDEA-21503](https://laby.net/ideas/21503))</li>
+          <li>Fixed Minecraft 1.0 rendering in the corner of an oversized window on Windows with display scaling ([IDEA-21468](https://laby.net/ideas/21468))</li>
+          <li>Fixed the instances release channel showing another release channel while the launcher was set to production</li>
+          <li>Errors caused by a broken release channel now offer to switch back to the default one and restart</li>
+          <li>Fixed launches missing libraries when the cached library manifest was stale</li>
+          <li>Fixed imported instances using incompatible mod version schemes</li>
+          <li>Fixed copied files losing their timestamps when converting a shared instance</li>
+          <li>Fixed the modpack install progress bar getting stuck when a download failed</li>
+          <li>Fixed the modpack install progress toast appearing twice when creating an instance from a modpack</li>
+          <li>Fixed required artifact downloads failing without an explanation</li>
+          <li>Network requests now retry properly before failing completely</li>
+          <li>The search query now carries over when switching between installed, browse and modpacks</li>
+          <li>Enable and Disable are now only offered when the selection actually allows it</li>
+          <li>Content actions are now shown inline on wider windows instead of only in the hamburger menu</li>
+          <li>Tooltips now blur the background properly and use full contrast text</li>
+          <li>The language and post launch dropdowns now blur properly and no longer overlap the title bar</li>
+          <li>Fixed loading animations overflowing the play button and instance cards</li>
+          <li>The launcher now stays visible behind the loading overlay instead of only appearing once loading finished</li>
+          <li>Fixed reset buttons next to text inputs being misaligned and the hamburger button's corners not matching the filter button</li>
+          <li>Fixed an incorrect gap in the header row</li>
+          <li>Fixed IDEA links in the changelog not parsing in all cases</li>
+          <li>Launching no longer reverifies every asset and library from scratch unless certain file metadata suggests a hash mismatch</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.12" date="2026-07-25">
       <description>
         <ul>
