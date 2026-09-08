@@ -73,6 +73,24 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.0.14" date="2026-08-25">
+      <description>
+        <ul>
+          <li>+ Added crash reports with dumps, decoded exit codes and a startup snapshot</li>
+          <li>+ Added a dialog instead of an empty window when the renderer cannot start</li>
+          <li>+ Added a right click action that creates a desktop shortcut for an instance on Windows</li>
+          <li>+ Added a launcher log history covering the last fifty sessions</li>
+          <li>- Fixed launcher meta staying stale until the next restart</li>
+          <li>- Fixed an install turning a mod jar into a folder</li>
+          <li>- Fixed the Java fallback not installing a runtime on Windows</li>
+          <li>- Fixed release channels being applied without a build for the instance version</li>
+          <li>- Fixed notifications and tokens not following the selected account</li>
+          <li>- Improved the launcher crash log so it sits with the other logs</li>
+          <li>- Improved missing library reporting when a child process dies on Windows</li>
+          <li>- Improved logging around every write to options.txt</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.13" date="2026-08-15">
       <description>
         <ul>
