@@ -73,6 +73,15 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.0.15" date="2026-09-14">
+      <description>
+        <ul>
+          <li>- Fixed an error popup when the game sent a packet this launcher did not know</li>
+          <li>- Fixed an instance losing its mods and options when another running instance was closed</li>
+          <li>- Improved the news categories, now shown as Laby and Minecraft</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.14" date="2026-08-25">
       <description>
         <ul>
