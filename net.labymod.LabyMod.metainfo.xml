@@ -73,6 +73,13 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.0.16" date="2026-09-16">
+      <description>
+        <ul>
+          <li>- Adjusted the update logic in preparation for 3.1</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.15" date="2026-09-14">
       <description>
         <ul>
