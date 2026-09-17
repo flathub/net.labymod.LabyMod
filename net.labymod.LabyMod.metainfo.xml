@@ -73,60 +73,377 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.1.0" date="2026-09-17">
+      <description>
+        <p>Instances</p>
+        <ul>
+          <li>Drag an instance onto the desktop to get a shortcut for it</li>
+          <li>Create a desktop shortcut for an instance from its right click menu</li>
+          <li>Duplicate an instance and pick which group the copy lands in</li>
+          <li>Instance settings gained a category rail and a search field</li>
+          <li>The screenshot viewer reads the LabyMod metadata in a picture</li>
+          <li>A screenshot shows the version account server and position it was taken at</li>
+          <li>Screenshots open in a small scene that shows where every player stood</li>
+          <li>The shaders tab can switch a shader mod back on instead of downloading it again</li>
+          <li>Right click menus on every installed list</li>
+          <li>Several instances may run at the same time by default</li>
+          <li>A game from your last session is picked up again after a launcher restart</li>
+          <li>An adopted game ends the way a launched one does with play time and cleanup</li>
+          <li>The instance list follows live updates without a manual refresh</li>
+          <li>Scanning a folder finds instances at any depth below it</li>
+          <li>The migrated default instance follows the newest release</li>
+          <li>Converting your own game directory copies eight files at once and shows progress</li>
+          <li>A LabyMod jar is never paired with a libraries list from another build</li>
+          <li>Being signed out is reported as sign in again instead of launching an old build</li>
+        </ul>
+        <p>Creating an instance</p>
+        <ul>
+          <li>Instance creation is a dialog wizard you can walk back through</li>
+          <li>Pick mods and content while creating an instance and install it all on finish</li>
+          <li>Pick the instance icon during creation</li>
+          <li>A card on the first step takes you straight to import</li>
+          <li>Bundle LabyMod is a toggle that is on by default</li>
+          <li>Modpack instances carry LabyMod where the pack loader allows it</li>
+          <li>Fabric and Forge offer every version their own loader supports</li>
+          <li>A searchable version picker with a minor version row you can scroll or drag</li>
+          <li>Loader tiles carry their own logo</li>
+          <li>Sharing mods and addons moved into advanced options</li>
+          <li>Switching loader no longer flashes a loading state</li>
+        </ul>
+        <p>Icon editor</p>
+        <ul>
+          <li>One icon editor for instances and servers</li>
+          <li>Combine a symbol and a gradient background into an icon</li>
+          <li>Custom background colours</li>
+          <li>A layer list with reordering visibility and drag handles</li>
+          <li>Select several layers and delete them together</li>
+          <li>Randomize an icon</li>
+          <li>The last eight icons you used are kept</li>
+          <li>Search the symbol grid</li>
+          <li>Upload your own image and treat it like any other symbol</li>
+          <li>A live preview at every size the launcher draws the icon in</li>
+          <li>Badged preset icons for new instances</li>
+        </ul>
+        <p>Mods and content</p>
+        <ul>
+          <li>A details dialog for mods addons and packs with description and gallery</li>
+          <li>Project details are cached on disk for fourteen days</li>
+          <li>Notify me on a mod that has no build for your version yet</li>
+          <li>Remove an installed project by clicking it</li>
+          <li>Bundled addons stay in the browse list greyed out at the bottom</li>
+          <li>Incompatible addons sort last</li>
+          <li>A browse search says when it matched nothing</li>
+          <li>A browse search clears when you leave that tab</li>
+          <li>Hovering the remove button on an installed addon shows a trash bin icon</li>
+          <li>Addons are checked against the Minecraft version too</li>
+          <li>A library is no longer called a mod</li>
+          <li>The store is offered when a card has nothing installed</li>
+        </ul>
+        <p>Modpacks</p>
+        <ul>
+          <li>Browse and install FTB modpacks next to Modrinth and CurseForge</li>
+          <li>A platform rail in the create dialog switches the modpack source</li>
+          <li>The whole FTB catalogue is cached locally so browsing it is instant</li>
+          <li>Modpack cards and their summary card were restyled</li>
+        </ul>
+        <p>Import and export</p>
+        <ul>
+          <li>Import NoRisk Client instances including the profiles that ship with the client</li>
+          <li>Import cards carry one meta line with version loader and content counts</li>
+          <li>The import header names how many launcher folders are searched</li>
+          <li>The import rescan setting left the global settings</li>
+        </ul>
+        <p>Clips recording</p>
+        <ul>
+          <li>Record your game in the background and save the last minutes with one key</li>
+          <li>Recording on Windows Linux and macOS straight out of the running game</li>
+          <li>Choose the codec quality frame rate and clip length up to five minutes</li>
+          <li>Hardware H264 HEVC and AV1 wherever the graphics card offers them</li>
+          <li>Dedicated AMD NVIDIA and Intel encoder paths for clean recordings</li>
+          <li>Pick the window to record from a grid of live previews</li>
+          <li>Record several games at once each keyed to its own window</li>
+          <li>Record the game the desktop and the microphone as separate sound tracks</li>
+          <li>A sound track per application so you can balance them afterwards</li>
+          <li>Microphone noise suppression push to talk and a level test</li>
+          <li>DeepFilterNet as a high quality microphone noise suppression</li>
+          <li>Save a clip by voice with phrase lists in German and English</li>
+          <li>A card and a chime inside the game when a clip is saved</li>
+          <li>The mouse pointer is drawn into Windows clips</li>
+          <li>A recording status chip and menu in the title bar</li>
+          <li>Leave chosen apps out of the recording</li>
+          <li>Clip settings have their own sections and a search</li>
+          <li>Settings that restart the recorder are marked as such</li>
+          <li>A diagnostics package with sample tables and one keyframe instead of your recording</li>
+          <li>Recording follows the game onto its own graphics card on hybrid laptops</li>
+          <li>The apps you can leave out are listed with their icons and update live</li>
+        </ul>
+        <p>Clip editor</p>
+        <ul>
+          <li>A full clip editor with a stage a transport a timeline and render jobs</li>
+          <li>Cut trim split and group items on the timeline</li>
+          <li>Text shapes arrows and blur you can drag while typing</li>
+          <li>A blur takes in what is drawn under it</li>
+          <li>Colour filters effects transitions and animation panels</li>
+          <li>Automatic captions from the clip sound</li>
+          <li>Pick the caption source language model and look</li>
+          <li>Captions through Whisper or Vosk with word timings</li>
+          <li>Import your own videos images and audio into a clip</li>
+          <li>Record a voiceover take and have it levelled automatically</li>
+          <li>Speed changes and freeze frames</li>
+          <li>Drafts so an edit survives closing the editor</li>
+          <li>Undo history for everything you do</li>
+          <li>Export a range as a video or as a GIF with a size choice</li>
+          <li>Export with one flattened sound track or with every track kept</li>
+          <li>Balance every sound track with a look ahead limiter over the mix</li>
+          <li>Reframe a clip for another aspect ratio</li>
+          <li>A library panel for your imports and assets</li>
+        </ul>
+        <p>Clips library and sharing</p>
+        <ul>
+          <li>A clips page with a grid month headers hover playback and filters</li>
+          <li>Filter clips by the people in them and the server they were played on</li>
+          <li>Players and the server are tagged automatically out of the game</li>
+          <li>Name tags over the clip viewer showing where the players stood</li>
+          <li>Post a clip to the Laby website with a visibility you choose</li>
+          <li>Comments reactions and mentions on posted clips</li>
+          <li>See the clips your friends posted</li>
+          <li>Edit the title server and people of an uploaded clip</li>
+          <li>Drag clips out of the library into Discord or the explorer</li>
+          <li>Rubber band selection ctrl A and delete in the grid</li>
+          <li>Rename a clip by clicking its title in the viewer</li>
+          <li>Folders for your clips with an order you set by hand</li>
+        </ul>
+        <p>Play screen</p>
+        <ul>
+          <li>The friends list sits in its own column beside the news on wide windows</li>
+          <li>Filter the friends list by name once it holds eight friends or more</li>
+          <li>Click a friend to open a direct chat</li>
+        </ul>
+        <p>Skins</p>
+        <ul>
+          <li>A discover page for skins with categories</li>
+          <li>Search a player by name and add the skin they are wearing</li>
+          <li>Drop a PNG onto the skin list to add it</li>
+          <li>Live use counts on every skin</li>
+          <li>Skins you are wearing can be removed from my skins not only added</li>
+        </ul>
+        <p>News</p>
+        <ul>
+          <li>News and changelog are one feed with filters per source</li>
+          <li>Laby articles LabyMod and launcher releases and Minecraft patch notes in one stream</li>
+          <li>Minecraft entries link their wiki page</li>
+          <li>A reader bar that carries the title once the headline scrolls away</li>
+          <li>The news categories are called Laby and Minecraft now</li>
+          <li>Markdown tables in news are styled like the website</li>
+        </ul>
+        <p>Settings</p>
+        <ul>
+          <li>Settings have a search bar five categories and a jump rail</li>
+          <li>A highlight colour picker with presets and any colour you like</li>
+          <li>A keybind control for the clip keys</li>
+          <li>Close the window to the tray with open settings and quit in its menu</li>
+          <li>Start with the system straight into the tray</li>
+          <li>Add a Steam library entry with artwork for Big Picture and the Deck</li>
+          <li>Storage settings showing what every kind of content uses</li>
+          <li>Hardware acceleration can be turned off and heals back on after fourteen days</li>
+          <li>Settings rows react at once and the list stays smooth while scrolling</li>
+          <li>A switch or dropdown follows its setting when it is changed somewhere else</li>
+          <li>Directory fields are wider and the path can still be selected</li>
+        </ul>
+        <p>Storage and downloads</p>
+        <ul>
+          <li>A storage panel listing every content kind with the clearable rows first</li>
+          <li>Instances listed by size each with a breakdown per category</li>
+          <li>Remove leftover instance data by hand</li>
+          <li>Delete cache entries and assets no instance holds any more</li>
+          <li>One content cache for every download in the launcher</li>
+          <li>The storage walk skips Windows junctions</li>
+          <li>Java runtimes install from the Mojang manifest instead of an archive</li>
+        </ul>
+        <p>Notifications</p>
+        <ul>
+          <li>Chat message banners with quick reply and the sender head</li>
+          <li>Unread notifications sit at the top of the list</li>
+          <li>Banners for friends coming online are opt in</li>
+        </ul>
+        <p>Logs and crashes</p>
+        <ul>
+          <li>The crash dialog reads the crash report and names what broke the game</li>
+          <li>Apply a fix from the crash dialog and take it back again</li>
+          <li>Diagnoses for old java 32 bit java the wrong version mixin conflicts and broken packs</li>
+          <li>Log level filters for normal warning and error lines</li>
+          <li>Send a log to support straight from the launcher</li>
+          <li>The game writes its own log files so the launcher can be closed and reopened</li>
+          <li>Ctrl F puts the caret in the log search field and keeps it open</li>
+          <li>Failed resources and uncaught errors reach the log</li>
+          <li>The install log is written to the launcher logs folder</li>
+          <li>A log another launcher holds open no longer breaks startup</li>
+        </ul>
+        <p>Accounts</p>
+        <ul>
+          <li>Deleting the account you are signed in with switches to another one</li>
+          <li>A read never lands in a bucket the token does not belong to</li>
+          <li>Account rows moved into a title bar popover</li>
+          <li>Cosmetics are retried when they arrive late or come back empty</li>
+          <li>The launcher falls back to the Steve head when no skin can be fetched</li>
+        </ul>
+        <p>Look and feel</p>
+        <ul>
+          <li>The whole launcher rebuilt on the LabySky design language</li>
+          <li>Blocky pixel styling for buttons pills tabs cards and dialogs</li>
+          <li>Rounded window corners on Windows 11</li>
+          <li>A new loading screen with the mark and a glow</li>
+          <li>Window control buttons drawn as launcher keys</li>
+          <li>Escape closes any dialog popover or menu without leaving the page</li>
+          <li>Every search field gained a clear button</li>
+          <li>The screenshot lightbox slides left and right when you page through it</li>
+        </ul>
+        <p>Performance and stability</p>
+        <ul>
+          <li>Startup shows its steps with a progress bar an estimate and a note when one runs long</li>
+          <li>Pages load lazily so the window is ready sooner</li>
+          <li>The launcher never waits on the clip recorder on Windows or Linux</li>
+          <li>The clips encoder probe never blocks the launcher on Linux</li>
+          <li>Background refreshers step aside while a game is launching</li>
+          <li>Connections race IPv6 and IPv4 so a slow host no longer stalls the launcher</li>
+          <li>The installer is about twenty seven megabytes smaller</li>
+          <li>Bundled images ship as webp and the fonts as one variable family</li>
+          <li>Files are written atomically so a crash cannot leave half a file behind</li>
+          <li>Quitting tears everything down instead of leaving a ghost process</li>
+          <li>A module set that lost a file relaunches into a sound one</li>
+          <li>The launcher runs on Electron 44 and Chromium 150</li>
+          <li>One zip reader and one zip writer for the whole launcher</li>
+          <li>No image bytes travel over the internal bridge any more</li>
+          <li>The first launch no longer grinds the window while it hashes files</li>
+          <li>Server and player icons are cached across views so nothing flickers</li>
+          <li>Minecraft metadata and version images are served from disk first</li>
+        </ul>
+        <p>Updates and installing</p>
+        <ul>
+          <li>The launcher updates in modules so most updates need no installer at all</li>
+          <li>A stable and a nightly update channel</li>
+          <li>Translations update over the air together with the code</li>
+          <li>A new assisted Windows installer with a welcome folder progress and finish page</li>
+          <li>The Windows installer is drawn in the launcher own look</li>
+          <li>The Windows installer is offline and carries everything it installs</li>
+          <li>Terms of service acceptance happens in the Windows installer</li>
+          <li>The update button moved into the title bar</li>
+        </ul>
+        <p>Windows</p>
+        <ul>
+          <li>Clips recording through the game own graphics with AMD NVIDIA and Intel encoders</li>
+          <li>Desktop shortcuts for instances by right click or by drag</li>
+          <li>The mouse pointer is composited into clips</li>
+        </ul>
+        <p>Linux</p>
+        <ul>
+          <li>Clips recording on Linux through OpenGL and Vulkan</li>
+          <li>Per application sound tracks on Linux</li>
+          <li>Launcher data moves to the local share folder on its own</li>
+          <li>The updated AppImage starts with a clean environment</li>
+          <li>Launcher and game windows are named so taskbars match them to the icon</li>
+        </ul>
+        <p>macOS</p>
+        <ul>
+          <li>A second build for everything below Ventura</li>
+          <li>Clips recording on macOS with hardware H264 and AAC sound</li>
+          <li>A mac moves onto the modern build as soon as it can run it</li>
+          <li>The menu bar item carries the logo cut lines and cmd Q quits the launcher</li>
+          <li>The dock icon brings the launcher back when it is hidden in the tray</li>
+          <li>Native libraries are stripped so the newest macOS can load them</li>
+          <li>File watchers are closed on quit so nothing deadlocks the app</li>
+        </ul>
+        <p>Servers</p>
+        <p>The servers page stays hidden until ongoing infrastructure updates are done.</p>
+        <p>Everything below is ready and will be switched on at a later time.</p>
+        <ul>
+          <li>Create a server with a type picker version information memory and a port</li>
+          <li>Paper Fabric Forge and vanilla servers with the right java resolved for you</li>
+          <li>A live console with colours and a command input</li>
+          <li>An overview tab graphing processor and memory use over the last minute</li>
+          <li>A files tab with a split editor syntax highlighting image preview and multi select</li>
+          <li>An NBT tree editor for server files</li>
+          <li>A properties tab with translated descriptions search and autosave</li>
+          <li>Access management with player autocomplete</li>
+          <li>A worlds tab and one click hosting of a singleplayer world</li>
+          <li>Backups on a schedule and of a running server</li>
+          <li>A content browser for mods plugins and datapacks</li>
+          <li>A server icon you can edit with the same editor instances use</li>
+          <li>Share your servers publically through our relay server (doesn't expose your IP)</li>
+        </ul>
+        <p>Chat and friends</p>
+        <p>The chats page stays hidden until ongoing infrastructure updates are done.</p>
+        <p>Everything below is ready and will be switched on at a later time.</p>
+        <ul>
+          <li>Changelog details for chats coming soon once publically released 🤫</li>
+        </ul>
+        <p>Integrations</p>
+        <ul>
+          <li>Discord presence now work for non LabyMod instances</li>
+          <li>A Steam library entry with artwork for Big Picture and the Steam Deck</li>
+          <li>Discord presence speaks its socket directly without an extra library</li>
+          <li>Turning Discord presence off drops the connection</li>
+        </ul>
+        <p>Onboarding</p>
+        <ul>
+          <li>Onboarding takes the most recent account when none is active</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.16" date="2026-09-16">
       <description>
         <ul>
-          <li>- Adjusted the update logic in preparation for 3.1</li>
+          <li>Adjusted the update logic in preparation for 3.1</li>
         </ul>
       </description>
     </release>
     <release version="3.0.15" date="2026-09-14">
       <description>
         <ul>
-          <li>- Fixed an error popup when the game sent a packet this launcher did not know</li>
-          <li>- Fixed an instance losing its mods and options when another running instance was closed</li>
-          <li>- Improved the news categories, now shown as Laby and Minecraft</li>
+          <li>Fixed an error popup when the game sent a packet this launcher did not know</li>
+          <li>Fixed an instance losing its mods and options when another running instance was closed</li>
+          <li>Improved the news categories, now shown as Laby and Minecraft</li>
         </ul>
       </description>
     </release>
     <release version="3.0.14" date="2026-08-25">
       <description>
         <ul>
-          <li>+ Added crash reports with dumps, decoded exit codes and a startup snapshot</li>
-          <li>+ Added a dialog instead of an empty window when the renderer cannot start</li>
-          <li>+ Added a right click action that creates a desktop shortcut for an instance on Windows</li>
-          <li>+ Added a launcher log history covering the last fifty sessions</li>
-          <li>- Fixed launcher meta staying stale until the next restart</li>
-          <li>- Fixed an install turning a mod jar into a folder</li>
-          <li>- Fixed the Java fallback not installing a runtime on Windows</li>
-          <li>- Fixed release channels being applied without a build for the instance version</li>
-          <li>- Fixed notifications and tokens not following the selected account</li>
-          <li>- Improved the launcher crash log so it sits with the other logs</li>
-          <li>- Improved missing library reporting when a child process dies on Windows</li>
-          <li>- Improved logging around every write to options.txt</li>
+          <li>Added crash reports with dumps, decoded exit codes and a startup snapshot</li>
+          <li>Added a dialog instead of an empty window when the renderer cannot start</li>
+          <li>Added a right click action that creates a desktop shortcut for an instance on Windows</li>
+          <li>Added a launcher log history covering the last fifty sessions</li>
+          <li>Fixed launcher meta staying stale until the next restart</li>
+          <li>Fixed an install turning a mod jar into a folder</li>
+          <li>Fixed the Java fallback not installing a runtime on Windows</li>
+          <li>Fixed release channels being applied without a build for the instance version</li>
+          <li>Fixed notifications and tokens not following the selected account</li>
+          <li>Improved the launcher crash log so it sits with the other logs</li>
+          <li>Improved missing library reporting when a child process dies on Windows</li>
+          <li>Improved logging around every write to options.txt</li>
         </ul>
       </description>
     </release>
     <release version="3.0.13" date="2026-08-15">
       <description>
         <ul>
-          <li>+ Added a notification center in the title bar with your laby.net inbox and launcher notifications ([IDEA-17123](https://laby.net/ideas/17123))</li>
-          <li>+ You can now be notified when a LabyMod-incompatible mod becomes compatible and install it into your instances straight from the notification</li>
-          <li>+ Rebuilt the first start setup into a full onboarding flow with terms, accounts and the most important settings</li>
-          <li>+ Crash reports now come with a diagnosis and a suggested fix for common causes, including a one click reset for broken memory or JVM arguments</li>
-          <li>+ Instances now warn you before launching when mods from a modpack have become incompatible, offering to cancel, launch anyway or disable them</li>
-          <li>+ You can now convert a shared instance into a separate one</li>
-          <li>+ Modpack search now offers other game versions and can create a matching instance for them</li>
-          <li>+ Failed modpack installs now offer a retry instead of a raw error</li>
-          <li>+ Environment variables can now be edited, for instances and globally</li>
-          <li>+ Added a button to open the logs folder directly ([IDEA-20760](https://laby.net/ideas/20760))</li>
-          <li>+ Mods, resource packs, shaders and modpacks are now cached on disk and reused across all instances instead of being downloaded again</li>
+          <li>Added a notification center in the title bar with your laby.net inbox and launcher notifications (IDEA-17123)</li>
+          <li>You can now be notified when a LabyMod-incompatible mod becomes compatible and install it into your instances straight from the notification</li>
+          <li>Rebuilt the first start setup into a full onboarding flow with terms, accounts and the most important settings</li>
+          <li>Crash reports now come with a diagnosis and a suggested fix for common causes, including a one click reset for broken memory or JVM arguments</li>
+          <li>Instances now warn you before launching when mods from a modpack have become incompatible, offering to cancel, launch anyway or disable them</li>
+          <li>You can now convert a shared instance into a separate one</li>
+          <li>Modpack search now offers other game versions and can create a matching instance for them</li>
+          <li>Failed modpack installs now offer a retry instead of a raw error</li>
+          <li>Environment variables can now be edited, for instances and globally</li>
+          <li>Added a button to open the logs folder directly (IDEA-20760)</li>
+          <li>Mods, resource packs, shaders and modpacks are now cached on disk and reused across all instances instead of being downloaded again</li>
           <li>Loading installed content is now dramatically faster</li>
           <li>Mod metadata is now read by streaming jar contents instead of loading whole archives into memory</li>
           <li>Bundled addons are no longer listed as installed/installable</li>
           <li>Fixed the launcher crashing on start when a second instance was opened</li>
-          <li>Fixed selecting a theme failing when LabyMod's settings were corrupt ([IDEA-21503](https://laby.net/ideas/21503))</li>
-          <li>Fixed Minecraft 1.0 rendering in the corner of an oversized window on Windows with display scaling ([IDEA-21468](https://laby.net/ideas/21468))</li>
+          <li>Fixed selecting a theme failing when LabyMod's settings were corrupt (IDEA-21503)</li>
+          <li>Fixed Minecraft 1.0 rendering in the corner of an oversized window on Windows with display scaling (IDEA-21468)</li>
           <li>Fixed the instances release channel showing another release channel while the launcher was set to production</li>
           <li>Errors caused by a broken release channel now offer to switch back to the default one and restart</li>
           <li>Fixed launches missing libraries when the cached library manifest was stale</li>
@@ -262,15 +579,15 @@
     <release version="3.0.7" date="2026-06-07">
       <description>
         <ul>
-          <li>+ CurseForge modpack browsing and installation is now supported</li>
-          <li>+ Switching to a version that does not support the current mod loader now offers to switch without a loader, or with an alternative one and checks for compatible mod versions</li>
-          <li>+ Compatible mod versions for the new Minecraft version are shown and can be automatically installed when changing versions</li>
-          <li>+ A warning is shown when installing a mod with incompatible dependencies</li>
-          <li>+ Mod list loading is significantly faster</li>
-          <li>+ Log sessions now show the LabyMod version, release channel, and commit reference in the header</li>
-          <li>+ Pressing Ctrl+A followed by Ctrl+C in the log viewer copies the entire raw log to the clipboard</li>
-          <li>+ Mod loader can now be disabled directly from the mods tab</li>
-          <li>+ Category filtering is now available when browsing resource packs, shaders and modpacks</li>
+          <li>CurseForge modpack browsing and installation is now supported</li>
+          <li>Switching to a version that does not support the current mod loader now offers to switch without a loader, or with an alternative one and checks for compatible mod versions</li>
+          <li>Compatible mod versions for the new Minecraft version are shown and can be automatically installed when changing versions</li>
+          <li>A warning is shown when installing a mod with incompatible dependencies</li>
+          <li>Mod list loading is significantly faster</li>
+          <li>Log sessions now show the LabyMod version, release channel, and commit reference in the header</li>
+          <li>Pressing Ctrl+A followed by Ctrl+C in the log viewer copies the entire raw log to the clipboard</li>
+          <li>Mod loader can now be disabled directly from the mods tab</li>
+          <li>Category filtering is now available when browsing resource packs, shaders and modpacks</li>
           <li>Temporary chat logging fix until the client fixes it</li>
           <li>Native libraries are now extracted per instance, preventing permission errors when relaunching on Windows</li>
           <li>The crash guard is now more robust against edge cases during startup and shutdown</li>
@@ -297,10 +614,10 @@
     <release version="3.0.6" date="2026-06-07">
       <description>
         <ul>
-          <li>+ On disk instance content now updates automatically (add or remove a mod, addon, ... and the launcher reflects it without a manual refresh</li>
-          <li>+ Added a "search online" button when an installed-content search has no matches, opening the browse tab with the same query</li>
-          <li>+ Added a stop button to the live log so you can close the game straight from the log view</li>
-          <li>+ The crash report now includes much more diagnostic context (storage mode, whether mods/addons are shared, the effective game directory, Java path, JVM arguments, window mode, system info, and more), and the crash window is larger and scales with the launcher window</li>
+          <li>On disk instance content now updates automatically (add or remove a mod, addon, ... and the launcher reflects it without a manual refresh</li>
+          <li>Added a "search online" button when an installed-content search has no matches, opening the browse tab with the same query</li>
+          <li>Added a stop button to the live log so you can close the game straight from the log view</li>
+          <li>The crash report now includes much more diagnostic context (storage mode, whether mods/addons are shared, the effective game directory, Java path, JVM arguments, window mode, system info, and more), and the crash window is larger and scales with the launcher window</li>
           <li>While an instance is starting, the play button now stays disabled with a loading cursor until the game window actually opens, instead of flipping to "stop" too early</li>
           <li>The stop, upload and delete buttons in the live log now have proper labels and are easier to hit</li>
           <li>Recolored the instance manage buttons and moved the "Manage" settings category to the bottom</li>
@@ -339,7 +656,7 @@
     <release version="3.0.4" date="2026-06-05">
       <description>
         <ul>
-          <li>+ Added a "Maximized" window mode that starts the game filling your screen, configurable both globally and per instance</li>
+          <li>Added a "Maximized" window mode that starts the game filling your screen, configurable both globally and per instance</li>
           <li>Restored the ability to rotate the main-menu player model up and down (hold Shift while dragging)</li>
           <li>Fixed migrated modpacks loading the wrong mods, each migrated pack now keeps its own isolated mod set instead of pulling in the shared default mods</li>
           <li>Fixed mod configs and keybinds (e.g. Litematica) not carrying over after migrating your modpacks to instances</li>
