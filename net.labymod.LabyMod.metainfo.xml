@@ -73,6 +73,13 @@
     <color type="primary" scheme_preference="dark">#172f5e</color>
   </branding>
   <releases>
+    <release version="3.1.21" date="2026-11-11">
+      <description>
+        <ul>
+          <li>Laby Launcher 3.1.21</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.1.20" date="2026-11-07">
       <description>
         <ul>
